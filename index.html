@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    
+    Q1 which one of the follwing is not a java feature?<br>
+    <input type="radio" name="qustion1">Object oriented<br>
+    <input type="radio" name="qustion1">Portable<br>
+    <input type="radio" name="qustion1" id="correct1">Use of pointers<br>
+    <input type="radio" name="qustion1">Dynamic and Extensible<br>
+    Q2 what is the extension of java code files ?<br>
+    <input type="radio" name="qustion2" id="correct2">.java<br>
+    <input type="radio" name="qustion2">,txt<br>
+    <input type="radio" name="qustion2">.js<br>
+    <input type="radio" name="qustion2">.class<br>
+    Q3 Which of the following user-defined header file extension used in c++?<br>
+    <input type="radio" name="qustion3"> hg<br>
+    <input type="radio" name="qustion3" id="correct3">cpp<br>
+    <input type="radio" name="qustion3">h<br>
+    <input type="radio" name="qustion3">hf<br>
+    Q4 Which of the following is not a type of Constructor in C++??<br>
+    <input type="radio" name="qustion4">Default constructor <br>
+    <input type="radio" name="qustion4">Parameterized constructor<br>
+    <input type="radio" name="qustion4">Copy constructor<br>
+    <input type="radio" name="qustion4" id="correct4">Friend constructor<br>
+    Q5 Which of the following approach is used by C++??<br> 
+    <input type="radio" name="qustion5">Left-right<br>
+    <input type="radio" name="qustion5">Right-left<br>
+    <input type="radio" name="qustion5" id="correct5">Bottom-up<br>
+    <input type="radio" name="qustion5">Top-down<br><br>
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()"><br><br>
+    <p id="demo" style=" font-size:large 10px; color:rgb(17, 11, 11)"></p>
+
+
+    <script>
+
+        function result(){
+           var score= 0;
+            
+            if(document.getElementById('correct1').checked)
+            {
+                score ++;
+            }
+            if(document.getElementById('correct2').checked)
+            {
+                score ++; 
+            }
+            if(document.getElementById('correct3').checked)
+            {
+                score ++; 
+            }
+            if(document.getElementById('correct4').checked)
+            {
+                score ++; 
+            }
+            if(document.getElementById('correct5').checked)
+            {
+                score ++; 
+            }
+           // if(document.getElementById('correct6').checked){
+                //score ++; 
+                //alert("yor score is:"+score);
+                document.getElementById('demo').innerHTML ="your score is:"+score;
+            }
+                
+                  
+                
+            
+           
+               
+        
+                
+
+            
+           
+        
+    
+    </script>
+</body>
+</html>
